@@ -55,13 +55,16 @@ img {
 }
 
 /* --------------------------------------------- */
+body::-webkit-scrollbar {
+  display: none;
+}
 
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--main-bg);
-  padding: 12.55rem 10rem;
+  padding: 12.6rem 10rem;
 }
 
 .wrapper {
@@ -79,8 +82,8 @@ img {
 
 .conversion__head {
   margin-bottom: 36px;
-  min-width: 550px;
-  padding: 30px 50px;
+  min-width: 100%;
+  padding: 30px 55px;
 
   text-align: center;
   background-color: var(--main-purple);
@@ -121,13 +124,19 @@ img {
 
     font-size: 1rem;
     cursor: pointer;
+    background-color: var(--text-purple);
+  }
+
+  #reset-btn {
+    background-color: var(--accent-purple);
+    color: var(--white);
   }
 }
 
 .conversion__output {
   margin-bottom: 36px;
   padding-inline: 25px;
-  width: 100%;
+  /* width: 100%; */
 
   .box {
     padding: 20px 77px;
@@ -145,6 +154,7 @@ img {
     }
 
     p {
+      text-align: center;
       font-size: 14px;
       color: var(--white);
     }
